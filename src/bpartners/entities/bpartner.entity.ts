@@ -11,16 +11,16 @@ export class Bpartner {
   @Column({ name: 'bpartner_name', type: 'varchar', nullable: true })
   name?: string;
 
-  @Column({
-    name: 'bpartner_name_fiscal_number',
-    type: 'varchar',
-    nullable: true,
-  })
-  fiscalNumber?: string;
+  // @Column({
+  //   name: 'bpartner_name_fiscal_number',
+  //   type: 'varchar',
+  //   nullable: true,
+  // })
+  // fiscalNumber?: string;
 
-  @Column({ name: 'bpartner_addres', type: 'varchar', nullable: true })
-  address?: string;
+  // @Column({ name: 'bpartner_addres', type: 'varchar', nullable: true })
+  // address?: string;
 
-  @Column({ name: 'bpartner_phone', type: 'varchar', nullable: true })
-  phone?: string;
+  // @Column({ name: 'bpartner_phone', type: 'varchar', nullable: true })
+  // phone?: string;
 }
