@@ -12,7 +12,8 @@ export class BpartnersService {
 
   async findAll() {
     return this.bpartnerRepository.find({
-      select: ['id', 'code', 'name', 'fiscalNumber', 'address', 'phone'],
+      // select: ['id', 'code', 'name', 'fiscalNumber', 'address', 'phone'],
+      select: ['id', 'code', 'name'],
       order: { name: 'ASC' },
       take: 50,
     });
@@ -21,7 +22,8 @@ export class BpartnersService {
   async findOne(id: number) {
     return this.bpartnerRepository.findOne({
       where: { id },
-      select: ['id', 'code', 'name', 'fiscalNumber', 'address', 'phone'],
+      // select: ['id', 'code', 'name', 'fiscalNumber', 'address', 'phone'],
+      select: ['id', 'code', 'name'],
     });
   }
 }
