@@ -15,7 +15,6 @@ export class BpartnersService {
       // select: ['id', 'code', 'name', 'fiscalNumber', 'address', 'phone'],
       select: ['id', 'code', 'name'],
       order: { name: 'ASC' },
-      take: 50,
     });
   }
 

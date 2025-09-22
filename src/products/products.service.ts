@@ -20,7 +20,7 @@ export class ProductsService {
     return this.productRepository.find({
       select: ['id', 'name', 'code'],
       order: { name: 'ASC' },
-      take: 50,
+     
     });
   }
 
